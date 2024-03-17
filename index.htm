@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Galeria de Quadrinhos</title>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#comics">Quadrinhos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="swiper-container">
+            <!-- Slides -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/banner_1.webp" alt="Descrição da imagem 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/banner_2.webp" alt="Descrição da imagem 2">
+                </div>
+
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Digite para filtrar">
+        <button type="submit">Filtrar</button>
+    </div>
+
+    <!-- Galeria de quadrinhos centralizada -->
+    <div class="gallery-wrapper">
+        <div class="gallery">
+            <!-- Itens da galeria -->
+            <!-- Repita os blocos abaixo para cada item da galeria -->
+            <div class="comic">
+                <img src="assets/capa_1.webp" alt="Quadrinho 1">
+                <h3>Título do Quadrinho 1</h3>
+                <p>Descrição breve...</p>
+            </div>
+            <div class="comic">
+                <img src="assets/capa_2.webp" alt="Quadrinho 2">
+                <h3>Título do Quadrinho 2</h3>
+                <p>Descrição breve...</p>
+            </div>
+            <div class="comic">
+                <img src="assets/capa_3.webp" alt="Quadrinho 3">
+                <h3>Título do Quadrinho 3</h3>
+                <p>Descrição breve...</p>
+            </div>
+            <div class="comic">
+                <img src="assets/capa_4.webp" alt="Quadrinho 4">
+                <h3>Título do Quadrinho 4</h3>
+                <p>Descrição breve...</p>
+            </div>
+            <div class="comic">
+                <img src="assets/capa_5.webp" alt="Quadrinho 5">
+                <h3>Título do Quadrinho 5</h3>
+                <p>Descrição breve...</p>
+            </div>
+            <div class="comic">
+                <img src="assets/capa_6.webp" alt="Quadrinho 6">
+                <h3>Título do Quadrinho 6</h3>
+                <p>Descrição breve...</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Início do Footer -->
+    <footer class="site-footer">
+        <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2022 - Galeria de Quadrinhos. Todos os direitos reservados.</p>
+    </footer>
+    <!-- Fim do Footer -->
+</body>
+
+
+</html>

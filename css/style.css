@@ -1,0 +1,279 @@
+/* Estilos básicos e fonte importada do Google Fonts */
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7ba7b5;
+    color: #304d63;
+}
+
+
+/* Super banner ajustado para preencher o header */
+
+.header {
+    width: 75%;
+    height: 600px;
+    margin: 5px auto 0 auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+    transform: perspective(1px) scale(0.99);
+    /* Perspectiva de aprofundamento */
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* Adicionado para permitir o posicionamento absoluto dos slides */
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    /* Adicionado para permitir o posicionamento absoluto dos slides */
+    top: 0;
+    /* Adicionado para alinhar os slides no topo do contêiner */
+    left: 0;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Adicionado para permitir o layout flexível */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+}
+
+nav li {
+    float: none;
+    /* Removido para permitir o layout flexível */
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Botões do carrossel */
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ecc981;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-pagination-bullet {
+    background: #ef8354;
+}
+
+
+/* Barra de pesquisa */
+
+.search-bar input {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #304d63;
+    margin: 20px auto;
+    display: block;
+}
+
+
+/* Ajustes na galeria de quadrinhos */
+
+.gallery-wrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.comic {
+    background-color: #59728e;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Bangers', cursive;
+}
+
+.comic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.comic:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Estilizando o título do quadrinho na capa */
+
+.comic h3 {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #304d63;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+/* Adicionando um efeito de sobreposição com informações */
+
+.comic:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(48, 77, 99, 0.8);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.comic:hover:before {
+    opacity: 1;
+}
+
+
+/* Estilizando os ícones de interação */
+
+.comic-info {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+/* Adicionando transições para os efeitos de hover */
+
+.comic h3,
+.comic-info {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.comic:hover h3,
+.comic:hover .comic-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.comic h3,
+.comic p {
+    padding: 10px;
+}
+
+.comic h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.comic p {
+    font-size: 1rem;
+    color: #cfd4d6;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+    margin-top: 15px;
+    /* Adiciona uma margem superior de 15px */
+}
+
+#search-input {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+
+/* Responsividade */
+
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
